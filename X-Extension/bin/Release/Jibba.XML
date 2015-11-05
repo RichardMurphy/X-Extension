@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jibba</name>
+    </assembly>
+    <members>
+        <member name="T:Jibba.XMath">
+            <summary>
+            The XMath object provides extra mathematical tools
+            </summary>
+        </member>
+        <member name="M:Jibba.XMath.PrimeNumbers(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets all prime numbers for a given range
+            </summary>
+            <param name="from">The integer to start from</param>
+            <param name="to">The integer to finish at</param>        
+            <returns>CSV values of all primes within the range.
+            
+            Throws an exception if 'to &lt; from' or 'to &lt; 2'.
+            
+            Will be slower for very large ranges. Less than 2 seconds for 0 to 1,000,000 when written to file.
+            </returns>        
+            <example>XMath.PrimeNumbers(0, 1000000)</example>
+        </member>
+    </members>
+</doc>

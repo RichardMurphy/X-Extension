@@ -1,0 +1,16 @@
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\obj\Debug\X-Extension.csprojResolveAssemblyReference.cache
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\bin\Debug\Jibba.XML
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\bin\Debug\Jibba.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\bin\Debug\Jibba.pdb
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\bin\Debug\SmallBasicLibrary.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\bin\Debug\SmallBasicLibrary.xml
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\obj\Debug\Jibba.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\Prime Numbers\obj\Debug\Jibba.pdb
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Debug\Jibba.XML
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Debug\Jibba.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Debug\Jibba.pdb
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Debug\SmallBasicLibrary.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Debug\SmallBasicLibrary.xml
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Debug\X-Extension.csprojResolveAssemblyReference.cache
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Debug\Jibba.dll
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Debug\Jibba.pdb
