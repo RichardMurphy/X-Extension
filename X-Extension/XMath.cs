@@ -17,13 +17,13 @@ namespace Jibba
         /// </summary>
         /// <param name="from">The integer to start from</param>
         /// <param name="to">The integer to finish at</param>        
-        /// <returns>CSV values of all primes within the range.
+        /// <returns>CSV of all primes within the range.
         /// 
         /// Throws an exception if 'to &lt; from' or 'to &lt; 2'.
         /// 
         /// Will be slower for very large ranges. Less than 2 seconds for 0 to 1,000,000 when written to file.
         /// </returns>        
-        /// <example>XMath.PrimeNumbers(0, 1000000)</example>
+        /// <example>File.WriteContents(filePath, XMath.PrimeNumbers(0, 1000000))</example>
         public static Primitive PrimeNumbers(Primitive from, Primitive to)
         {
             string tempFile = Directory.GetCurrentDirectory() + "\\Prime Numbers.tmp";
@@ -74,6 +74,77 @@ namespace Jibba
             finally
             {
                 System.IO.File.Delete(tempFile);
+            }
+        }
+
+        /// <summary>
+        /// Gets the prime factor(s) for a given value
+        /// </summary>
+        /// <param name="value">Any positive integer &gt; 1 and &lt; 9,223,372,036,854,775,807
+        /// MUST be a numerical string.</param>
+        /// <returns>The prime factors as CSV
+        /// 
+        /// Will be slower for some very large numbers. Less than 1 minute for 9,223,372,036,854,775,806.
+        /// </returns>
+        /// <example>XMath.PrimeFactors("9223372036854775806")
+        /// OR
+        /// XMath.PrimeFactors(Controls.GetTextBoxText(txtBox))
+        /// </example>
+        public static Primitive PrimeFactors(Primitive value)
+        {   
+            //largest int 9223372036854775806 == upto 9,223,372,036,854,775,806  tt = 1 minute
+              
+            try
+            {
+                long orginalValue = System.Convert.ToInt64(value.ToString());
+
+                if (orginalValue < 2 || orginalValue % 1 > 0)
+                    ExceptionX.Handler();
+
+                long newValue = orginalValue;
+                long total = 1, step = 1;
+                string factors = "";
+                bool isPrime = true;
+
+                for (long divisor = 2; divisor < orginalValue; divisor += step)
+                {
+                    if (divisor > 2)
+                        step = 2;
+
+                    if (newValue % divisor == 0)
+                    {
+                        //check if divisor is prime
+                        isPrime = true;
+                        for (long i = 2; i < System.Math.Sqrt(divisor); i++)
+                        {
+                            if (divisor % i == 0)
+                            {
+                                isPrime = false;
+                            }
+                        }
+                        if (isPrime)
+                        {
+                            factors += divisor.ToString() + ",";
+                            newValue = newValue / divisor;
+                            total *= divisor;
+                            divisor = 1;
+                        }
+                    }
+                    if (total == orginalValue)
+                        break;
+                }
+                if (orginalValue == 2)
+                    factors = "2";
+
+                if (factors == "")
+                    factors = orginalValue.ToString();
+
+                return factors;                
+            }
+            catch
+            {
+                ExceptionX.Handler();
+                return "";
             }
         }
     }    
