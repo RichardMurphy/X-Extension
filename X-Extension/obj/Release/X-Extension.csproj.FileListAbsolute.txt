@@ -13,3 +13,4 @@ C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Release\SmallBasi
 C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\bin\Release\SmallBasicLibrary.xml
 C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Release\Jibba.dll
 C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Release\Jibba.pdb
+C:\Users\Rick\OneDrive\Small Basic\X-Extension\X-Extension\obj\Release\X-Extension.csprojResolveAssemblyReference.cache

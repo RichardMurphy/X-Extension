@@ -118,7 +118,7 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Controls.AddButton(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Adds a button to the graphics window with the specified width and height.
+            Adds a button to the graphics window at the specified position.
             </summary>
             <param name="caption">
             The caption to display in the button.
@@ -157,7 +157,7 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Controls.AddTextBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Adds a text input box to the graphics window with the specified width and height.
+            Adds a text input box to the graphics window at the specified position.
             </summary>
             <param name="left">
             The x co-ordinate of the text box.
@@ -171,7 +171,7 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Controls.AddMultiLineTextBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Adds a multi-line text input box to the graphics window with the specified width and height.
+            Adds a multi-line text input box to the graphics window at the specified position.
             </summary>
             <param name="left">
             The x co-ordinate of the text box.
@@ -718,7 +718,7 @@
             Plays musical notes.
             </summary>
             <param name="notes">
-            A set of musical notes to play.  The format is a subset of the Music Markup Language supported by QBasic.
+            A set of musical notes to play.  The format is a subset of the Music Macro Language supported by QBasic.
             </param>
             <example>
             <code>
@@ -1162,7 +1162,7 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.TextWindow.Hide">
             <summary>
-            Hides the text window.
+            Hides the text window.  Content is perserved when the window is shown again.
             </summary>
         </member>
         <member name="M:Microsoft.SmallBasic.Library.TextWindow.Clear">
@@ -1381,7 +1381,7 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinition(Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Gets the definition of a word, in English.
+            Gets the definition of a word in English.  The same as GetDefinitionEnglishToEnglish.
             </summary>
             <param name="word">
             The word to define.
@@ -1390,9 +1390,185 @@
             The definition(s) of the specified word.
             </returns>
         </member>
-        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionInFrench(Microsoft.SmallBasic.Library.Primitive)">
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToEnglish(Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Gets the definition of a word, in French.
+            Gets the definition of a word, English to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionSimplifiedChineseToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Simplified Chinese to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToGerman(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to German.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToSimplifiedChinese(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Simplified Chinese.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToFrench(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to French.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionGermanToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, German to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToJapanese(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Japanese.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionFrenchToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, French to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionItalianToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Itlian to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionTraditionalChineseToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Traditional Chinese to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionSpanishToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Spanish to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionJapaneseToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Japanese to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToKorean(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Korean.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToTraditionalChinese(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Traditional Chinese.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionKoreanToEnglish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, Korean to English.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToItalian(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Italian.
+            </summary>
+            <param name="word">
+            The word to define.
+            </param>
+            <returns>
+            The definition(s) of the specified word.
+            </returns>
+        </member>
+        <member name="M:Microsoft.SmallBasic.Library.Dictionary.GetDefinitionEnglishToSpanish(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets the definition of a word, English to Spanish.
             </summary>
             <param name="word">
             The word to define.
@@ -1427,6 +1603,11 @@
         <member name="T:Microsoft.SmallBasic.Library.Flickr">
             <summary>
             This class provides access to Flickr photo services.
+            </summary>
+        </member>
+        <member name="F:Microsoft.SmallBasic.Library.Flickr._urlTemplate">
+            <summary>
+            Flickr URL Template (with https)
             </summary>
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Flickr.GetPictureOfMoment">
@@ -2031,8 +2212,8 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Math.Ceiling(Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Gets an integer that is greater than or equal to the specified decimal number.  For example,
-            32.233 will return 33.
+            Returns the smallest integer that is greater than or equal to the argument.  It rounds up the integer value.
+            For example, 32.233 will return 33. Also, 44 will return 44.
             </summary>
             <param name="number">
             The number whose ceiling is required.
@@ -2043,8 +2224,8 @@
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Math.Floor(Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Gets an integer that is less than or equal to the specified decimal number.  For example,
-            32.233 will return 32.
+            Returns the largest integer that is less than or equal to the argument.  It rounds down the integer value.
+            For example, 32.233 will return 32. Also, 44 will return 44.
             </summary>
             <param name="number">
             The number whose floor value is required.
@@ -2253,6 +2434,17 @@
             A Random number that is less than or equal to the specified max.
             </returns>
         </member>
+        <member name="M:Microsoft.SmallBasic.Library.Math.DoubleToDecimal(System.Double)">
+            <summary>
+            Handles double to decimal conversion
+            </summary>
+            <param name="number">
+            The input number
+            </param>
+            <returns>
+            The output number
+            </returns>
+        </member>
         <member name="P:Microsoft.SmallBasic.Library.Math.Pi">
             <summary>
             Gets the value of Pi
@@ -2305,7 +2497,7 @@
         </member>
         <member name="T:Microsoft.SmallBasic.Library.Network">
             <summary>
-            This private helper class provides network access methods
+            This helper class provides network access methods
             </summary>
         </member>
         <member name="M:Microsoft.SmallBasic.Library.Network.DownloadFile(Microsoft.SmallBasic.Library.Primitive)">

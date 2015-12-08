@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Reflection;
 using Microsoft.SmallBasic.Library;
+using System.Numerics;
+
 
 namespace Jibba
 {
@@ -146,6 +148,29 @@ namespace Jibba
                 ExceptionX.Handler();
                 return "";
             }
+        }
+
+        /// <summary>
+        /// Gets the Greatest Common Divisor for 2 integers
+        /// </summary>
+        /// <param name="valueOne">Any integer</param>
+        /// <param name="valueTwo">Any integer</param>
+        /// <returns>The greatest common divisor</returns>
+        /// <example>XMath.GreatestCommonDivisor(15, 2565)</example>
+        public static Primitive GreatestCommonDivisor(Primitive valueOne, Primitive valueTwo)
+        {
+           try
+            {
+                return BigInteger.GreatestCommonDivisor((int)valueOne, (int)valueTwo).ToString();
+            } 
+
+            catch
+            {
+                ExceptionX.Handler();
+                return "";
+            }
+
+            
         }
     }    
 }
