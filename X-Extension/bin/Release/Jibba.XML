@@ -4,6 +4,51 @@
         <name>Jibba</name>
     </assembly>
     <members>
+        <member name="T:Jibba.XApp">
+            <summary>
+            Provides ways to control apps
+            </summary>
+        </member>
+        <member name="M:Jibba.XApp.StartProcess(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Starts a process
+            </summary>
+            <param name="fileName">The full file path of the program to start</param> 
+            <returns>The name of the process</returns>
+            <example>XApp.StartProcess("C:\Programs\MyApp.exe")</example>       
+        </member>
+        <member name="M:Jibba.XApp.StartWithStartInfo(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+             <summary>
+             Starts a process with start info
+             </summary>
+             <param name="fileName">The full file path of the program to start</param>
+             <param name="windowStyle">Specify the window style as hidden, maximized or minimized.
+             Use "" to specify normal.</param>
+             <param name="args">Specify arguments for the process. Use "" to specify nothing.</param>
+            <returns>The name of the process.</returns>
+             <example>XApp.StartWithStartInfo("IExplore.exe", "maximized", "www.getjibba.com")</example>
+        </member>
+        <member name="M:Jibba.XApp.GetAllProcesses(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets all the processes currently running on the PC
+            </summary> 
+            <param name="machineName">Specify the name of the PC</param> 
+            <returns>an array</returns>
+            <example>XApp.GetAllProcesses(XApp.MachineName)</example>     
+        </member>
+        <member name="M:Jibba.XApp.Kill(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Kills a process
+            </summary>
+            <param name="process">The name of the process</param> 
+            <example>XApp.Kill("MyProgram")</example>       
+        </member>
+        <member name="P:Jibba.XApp.MachineName">
+            <summary>
+            Gets the machine name of this local computer
+            </summary> 
+            <example>thisMachineName = XApp.MachineName</example>      
+        </member>
         <member name="T:Jibba.XMath">
             <summary>
             The XMath object provides extra mathematical tools

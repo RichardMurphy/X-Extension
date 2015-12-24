@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExceptionX.cs" />
+    <Compile Include="XApp.cs" />
     <Compile Include="XMath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

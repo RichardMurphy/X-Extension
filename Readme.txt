@@ -5,6 +5,9 @@ Commit 3: XMath.PrimeNumbers, XMath.PrimeFactors
 
 Commit 4: XMath.GreatestCommonDivisor
 
+Commit 5: XApp.StartProcess(), XApp.StartWithStartInfo(), XApp.GetAllProcesses(), XApp.Kill() & XApp.MachineName
+	Works but needs Exception handling.
+
 
 
 http://readwrite.com/2013/10/02/github-for-beginners-part-2
