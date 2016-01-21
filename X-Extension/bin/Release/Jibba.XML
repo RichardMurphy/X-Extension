@@ -49,6 +49,23 @@
             </summary> 
             <example>thisMachineName = XApp.MachineName</example>      
         </member>
+        <member name="T:Jibba.XEnvironment">
+            <summary>
+            Provides some Environment properties and methods
+            </summary>
+        </member>
+        <member name="P:Jibba.XEnvironment.NewLine">
+            <summary>
+            Gets the newline character for the current environment
+            </summary>
+            <returns>a newline</returns>
+        </member>
+        <member name="P:Jibba.XEnvironment.UserName">
+            <summary>
+            Gets the Users name for the current environment
+            </summary>
+            <returns>Users name</returns>
+        </member>
         <member name="T:Jibba.XLeadersBoard">
             <summary>
             provides some SQLite resources to create leader boards. Each board is a unique table in one large shared database.

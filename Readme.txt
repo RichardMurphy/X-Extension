@@ -14,6 +14,8 @@ Commit 6: XLeadersBoard class: CreateTable(), AddRecord(), GetAllRecords() & Upd
 Commit 7: XLeadersBoard.GetLeaders()
 	Works well.
 
+Commit 8: XEnvironment class: NewLine & UserName
+
 
 
 http://readwrite.com/2013/10/02/github-for-beginners-part-2
