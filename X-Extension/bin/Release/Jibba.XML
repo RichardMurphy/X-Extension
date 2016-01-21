@@ -56,9 +56,9 @@
         </member>
         <member name="M:Jibba.XLeadersBoard.CreateTable(Microsoft.SmallBasic.Library.Primitive)">
             <summary>
-            Creates a table (aka leaders board) of the name you specify if it doesn't already exist
+            Creates a table (aka leaders board) of the name (no spaces) you specify if it doesn't already exist
             </summary>
-            <param name="tableName">Unique Game name. Include the programmers name (or PIN) here as well to avoid any overwrites</param>
+            <param name="tableName">Unique Game name (no spaces). Include the programmers name (or PIN) here as well to avoid any overwrites</param>
             <returns></returns>
             <example>XLeadersBoard.CreateTable("SolitaireByJibba")</example>
         </member>
@@ -92,6 +92,15 @@
             <param name="score">Game score. Integer</param>
             <param name="time">How long it took to get that score. Integer</param>
             <example>XLeadersBoard.UpdateRecord("SolitaireByJibba", "Jack", dateRef, 100, 750)</example>
+        </member>
+        <member name="M:Jibba.XLeadersBoard.GetLeaders(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Gets a limited number of records sorted by score, time and player in DESC, ASC and ASC order repectively
+            </summary>
+            <param name="tableName">The game name used when the board was created</param>
+            <param name="limit">Limit how many records to show. Integer</param>
+            <returns>A sorted CSV table of the records up to the limit</returns>
+            <example>XLeadersBoard.GetLeaders("SolitaireByJibba", 10)</example>
         </member>
         <member name="T:Jibba.XMath">
             <summary>

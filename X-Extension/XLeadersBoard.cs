@@ -10,12 +10,13 @@ namespace Jibba
     [SmallBasicType]
     public static class XLeadersBoard
     {
-        private static string databasePath = "http://getjibba.com/Databases/LeadersBoard/";
+        private static string databasePath = "http://getjibba.com/Databases/LeadersBoard/"; //remote path for RELEASE
+        //private static string databasePath = "http://getjibba/Databases/LeadersBoard/"; //local vhosts
 
         /// <summary>
-        /// Creates a table (aka leaders board) of the name you specify if it doesn't already exist
+        /// Creates a table (aka leaders board) of the name (no spaces) you specify if it doesn't already exist
         /// </summary>
-        /// <param name="tableName">Unique Game name. Include the programmers name (or PIN) here as well to avoid any overwrites</param>
+        /// <param name="tableName">Unique Game name (no spaces). Include the programmers name (or PIN) here as well to avoid any overwrites</param>
         /// <returns></returns>
         /// <example>XLeadersBoard.CreateTable("SolitaireByJibba")</example>
         public static void CreateTable(Primitive tableName)
@@ -104,6 +105,29 @@ namespace Jibba
             catch (WebException ex)
             {
 
+            }
+        }
+
+        /// <summary>
+        /// Gets a limited number of records sorted by score, time and player in DESC, ASC and ASC order repectively
+        /// </summary>
+        /// <param name="tableName">The game name used when the board was created</param>
+        /// <param name="limit">Limit how many records to show. Integer</param>
+        /// <returns>A sorted CSV table of the records up to the limit</returns>
+        /// <example>XLeadersBoard.GetLeaders("SolitaireByJibba", 10)</example>
+        public static Primitive GetLeaders(Primitive tableName, Primitive limit)
+        {
+            string query = "tableName=" + tableName + "&limit=" + limit;
+            try
+            {
+                using (WebClient client = new WebClient())
+                {
+                    return client.DownloadString(new Uri(databasePath + "selectLeaders.php?" + query));
+                }
+            }
+            catch (WebException ex)
+            {
+                return "";
             }
         }
     }
