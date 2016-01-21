@@ -8,7 +8,7 @@ namespace Jibba
     /// Provides some Environment properties and methods
     /// </summary>
     [SmallBasicType]
-    class XEnvironment
+    public static class XEnvironment
     {
         /// <summary>
         /// Gets the newline character for the current environment
