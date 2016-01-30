@@ -44,16 +44,17 @@ namespace Jibba
                 startInfo.WindowStyle = ProcessWindowStyle.Maximized;
 
             else if (windowStyle.ToString().ToLower() == "minimized")
-                startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-
+                startInfo.WindowStyle = ProcessWindowStyle.Minimized;            
             else
                 startInfo.WindowStyle = ProcessWindowStyle.Normal;
-
-            myProcess = Process.Start(startInfo).ToString();
 
             if (args != "")
             {
                 startInfo.Arguments = args;
+                myProcess = Process.Start(startInfo).ToString();
+            }
+            else
+            {
                 myProcess = Process.Start(startInfo).ToString();
             }
 
