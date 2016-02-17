@@ -16,6 +16,7 @@ Commit 7: XLeadersBoard.GetLeaders()
 
 Commit 8: XEnvironment class: NewLine & UserName
 
+Commit 9: Fixed args in XApp
 
 
 http://readwrite.com/2013/10/02/github-for-beginners-part-2
