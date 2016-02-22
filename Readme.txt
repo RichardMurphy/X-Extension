@@ -18,5 +18,6 @@ Commit 8: XEnvironment class: NewLine & UserName
 
 Commit 9: Fixed args in XApp
 
+Commit 10: XDialogue.Password
+	litdev solved this for me
 
-http://readwrite.com/2013/10/02/github-for-beginners-part-2

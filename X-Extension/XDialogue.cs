@@ -1,17 +1,12 @@
 ﻿using Microsoft.SmallBasic.Library;
 using Microsoft.SmallBasic.Library.Internal;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Globalization;
 using System.Reflection;
-using System.Threading;
-using System.Windows;
-
 using System.Windows.Forms;
-using Window = System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using Window = System.Windows.Forms.VisualStyles.VisualStyleElement;  //was mixing up wpf and forms -Password
+using Window = System.Windows.Window;
 
-
+//litdev solved Password for me. Needs to redone in wpf. https://social.msdn.microsoft.com/Forums/en-US/73082625-9b17-4923-a280-2caf0709c1d4/lddialoguesconfirm?forum=smallbasic
 namespace Jibba
 {
     /// <summary>
@@ -89,7 +84,7 @@ namespace Jibba
         }
     }
 
-    public class Wpf32Window : System.Windows.Forms.IWin32Window
+    class Wpf32Window : System.Windows.Forms.IWin32Window
     {
         public IntPtr Handle { get; private set; }
 
