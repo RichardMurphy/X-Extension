@@ -21,3 +21,5 @@ Commit 9: Fixed args in XApp
 Commit 10: XDialogue.Password
 	litdev solved this for me
 
+Commit 11: Tested XDialogue
+

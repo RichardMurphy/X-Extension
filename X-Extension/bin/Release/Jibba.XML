@@ -25,6 +25,11 @@
               Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
             </summary>
         </member>
+        <member name="P:Jibba.Properties.Resources.question_mark">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
         <member name="T:Jibba.XApp">
             <summary>
             Provides ways to control apps
@@ -82,6 +87,14 @@
             <param name="title">a title for the dialogue box</param>
             <param name="text">text label for the dialogue box</param>
             <returns>the password</returns>
+        </member>
+        <member name="M:Jibba.XDialogue.YesNo(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            A yes no dialogue box
+            </summary>
+            <param name="title">Dialogue title</param>
+            <param name="text">Dialogue text</param>
+            <returns>the button clicked value, Yes or No</returns>
         </member>
         <member name="T:Jibba.XEnvironment">
             <summary>
